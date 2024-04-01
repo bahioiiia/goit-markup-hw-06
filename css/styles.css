@@ -506,10 +506,10 @@ a {
     }
 }
 
-/*!=======PORTFOLIO========*/
+/*!=======PORTFOLIO-MOBILE========*/
 .portfolio {
     text-transform: capitalize;
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .port-header {
@@ -517,6 +517,7 @@ a {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
     margin-bottom: 72px;
@@ -531,7 +532,7 @@ a {
 }
 
 .port-item{
-    width: calc((100% - 48px) / 3);
+    width: 288px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -592,6 +593,31 @@ a {
 
 .port-item:hover .port-overlay {
     transform: translateY(0%);
+}
+
+/*!=======PORTFOLIO-TABLET========*/
+@media screen and (min-width: 768px) {
+    .port-list {
+        gap: 30px;
+        row-gap: 72px;
+    }
+
+    .port-item {
+        width: calc((100% - 30px) / 2);
+    }
+}
+
+/*!=======PORTFOLIO-DESKTOP========*/
+@media screen and (min-width: 1158px) {
+    .port-list {
+        gap: 24px;
+        row-gap: 48px;
+    }
+
+    .port-item {
+        width: calc((100% - 48px) / 3);
+        box-shadow: none;
+    }
 }
 
 /*! ------------FOOTER MOBILE----------- */
