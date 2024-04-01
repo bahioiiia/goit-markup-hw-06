@@ -60,33 +60,25 @@ a {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
- .container {
-     max-width: 320px;
-     padding-left: 16px;
-     padding-right: 16px;
-     margin-left: auto;
-     margin-right: auto;
- }
-
- @media screen and (min-width: 768px) {
-     .container {
-         max-width: 768px;
-     }
- }
-
- @media screen and (min-width: 1158px) {
-     .container {
-         max-width: 1158px;
-         padding-left: 15px;
-         padding-right: 15px;
-     }
- }
-/* .container {
-    width: 1158px;
-    padding: 0 15px;
+.container {
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin: 0 auto;
-} */
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+}
 
 /*=======HEADER========*/
 .header {
@@ -182,11 +174,13 @@ a {
     color: #404bbf;
 }
 
-/*=======HERO========*/
+/*!=======HERO-MOBILE========*/
 
 .hero{
     background-color: #2e2f42;
-    padding: 188px 0;
+    /* padding: 188px 0; */
+    padding: 72px 0;
+    max-width: 320px;
     
     box-sizing: content-box;
     background-image: url(../images/people-office1.jpg);
@@ -201,16 +195,30 @@ a {
     margin:auto;
 }
 
+/*? @media screen and (min-device-pixel-ratio),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/back-mob@2x.jpg);
+    }
+} */
+
 .hero-header{
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 496px; 
-    margin: 0 auto 48px;
+    max-width: 216px;
+    margin: 0 auto 72px;
 }
+
+
+
 
 .hero-button{
     display: block;
@@ -233,8 +241,62 @@ a {
 .hero-button:hover, .hero-button:focus {
     background-color: #404BBF
 }
+/*! ---------HERO-TABLET--------------  */
+@media screen and (min-width: 768px) {
+    .hero {
+        padding: 112px 0;
+        max-width: 768px;
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office1.jpg);
+    }
+    
+/*?     @media screen and (min-device-pixel-ratio),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .solutions {
+            background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/back-tab@2x.jpg);
+        }
+    } */
+    .hero-header {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        margin: 0 auto 36px;
+    }
+}
+/*! ---------HERO-DESKTOP--------------  */
+@media screen and (min-width: 1158px) {
+    .hero {
+        padding: 188px 0;
+        max-width: 1440px;
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office1.jpg);
+    }
+    
+/*?     @media screen and (min-device-pixel-ratio),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .solutions {
+            background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/bg-desk@2x.jpg);
+        }
+    } */
 
-/*=======FEATURES========*/
+    .hero-header {
+        margin: 0 auto 48px;
+    }    
+}
+
+/*!=======FEATURES========*/
 
 .features {
     padding: 120px 0;
@@ -277,7 +339,7 @@ a {
     border: 1px solid #8e8f99;
 }
 
-/*=======TEAM========*/
+/*!=======TEAM========*/
 .team {
     background-color: #f4f4fd;
     padding: 120px 0;
@@ -362,7 +424,7 @@ a {
 }
 
 
-/*=======PORTFOLIO========*/
+/*!=======PORTFOLIO========*/
 
 .portfolio {
     text-transform: capitalize;
@@ -454,8 +516,7 @@ a {
     transform: translateY(0%);
 }
 
-/*=======FOOTER========*/
-
+/*!=======FOOTER========*/
 /* ! ------------FOOTER MOBILE----------- */
 .footer{
     background-color: #2e2f42;
@@ -668,7 +729,7 @@ a {
 
 
 
-/* -------------MODAL WINDOW----------------- */
+/*? -------------MODAL WINDOW----------------- */
 .modal-overlay {
     background: rgba(46, 47, 66, 0.4);
     position: fixed;
@@ -828,7 +889,7 @@ a {
     fill: var(--icons);
 }
 
-/* ----------PRIV--------------*/
+/*? ----------PRIV--------------*/
 
 .chbox-block {
     margin-bottom: 24px;
@@ -860,7 +921,7 @@ a {
     color: var(--iris);
 }
 
-/* ---------BUTTON----------*/
+/*? ---------BUTTON----------*/
 
 .modal-label-btn {
     display: flex;
