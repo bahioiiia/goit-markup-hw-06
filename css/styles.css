@@ -501,21 +501,21 @@ a {
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/people-office1.jpg);
+        url(../images/bg/bg-mob.jpg);
     max-width: 1440px;
     margin:auto;
 }
 
-/*? @media screen and (min-device-pixel-ratio),
+@media screen and (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/back-mob@2x.jpg);
+            url(../images/bg/bg-mob-2x.jpg);
     }
-} */
+}
 
 .hero-header{
     font-weight: 700;
@@ -555,21 +555,22 @@ a {
         padding: 112px 0;
         max-width: 768px;
         background-image: linear-gradient(to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/people-office1.jpg);
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/bg/bg-tab.jpg);
     }
     
-/*?     @media screen and (min-device-pixel-ratio),
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .solutions {
             background-image: linear-gradient(to bottom,
-                    rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)),
-                url(../images/back-tab@2x.jpg);
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../images/bg/bg-tab-2x.jpg);
         }
-    } */
+    }
+    
     .hero-header {
         font-size: 56px;
         line-height: 1.07;
@@ -585,24 +586,23 @@ a {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/people-office1.jpg);
+            url(../images/bg/bg-dsk.jpg);
     }
-    
-/*?     @media screen and (min-device-pixel-ratio),
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .solutions {
             background-image: linear-gradient(to bottom,
-                    rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)),
-                url(../images/back-desk@2x.jpg);
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../images/bg/bg-dsk-2x.jpg);
         }
-    } */
-
+    }
+    
     .hero-header {
         margin: 0 auto 48px;
     }    
-}
+}    
 
 /*!=======FEATURES-MOBILE========*/
 .features {/*  */
